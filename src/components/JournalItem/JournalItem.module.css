@@ -1,0 +1,101 @@
+.journalItem {
+	border-radius: 5px;
+	border: 0.5px solid #fff;
+	padding: 10px 20px;
+	margin-top: 10px;
+	width: 350px;
+	position: relative;
+	transition: 0.25s;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.journalItem.white {
+	background: #384661;
+	color: #fff;
+}
+
+.journalItem.dark {
+	background: #c2aa92;
+	color: #384661;
+}
+
+.header {
+	height: 30px;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	font-size: 16px;
+	gap: 5px;
+}
+
+.header > h3 {
+	font-weight: 400;
+	line-height: 14px;
+	font-weight: 600;
+}
+
+.date {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.delete {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 50%;
+	transform: translate(0, -50%);
+	right: 15px;
+}
+
+.delete:hover {
+	background: red;
+}
+
+.deleteIcon {
+	font-size: 18px;
+}
+
+.selected.white {
+	/* border-bottom: 3px solid green; */
+	/* text-decoration: underline; */
+	background: black;
+	color: white;
+}
+.selected.dark {
+	/* border-bottom: 3px solid green; */
+	/* text-decoration: underline; */
+	background: black;
+	color: white;
+}
+
+.imgMood {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+
+.verySadMood {
+	background: url('../../assets//moods/very-sad.svg') no-repeat !important ;
+}
+
+.sadMood {
+	background: url('../../assets//moods/sad.svg') no-repeat !important ;
+}
+
+.neutralMood {
+	background: url('../../assets//moods/neutral.svg') no-repeat !important ;
+}
+
+.happyMood {
+	background: url('../../assets//moods/happy.svg') no-repeat !important ;
+}
+
+.veryHappyMood {
+	background: url('../../assets//moods/very-happy.svg') no-repeat !important ;
+}

@@ -1,0 +1,23 @@
+.addButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 350px;
+	padding: 10px;
+	font-size: 17px;
+	border: 0;
+	border-radius: 5px;
+	background: #16a04b;
+	gap: 8px;
+	color: #fff;
+	border: 0.5px solid #fff;
+	cursor: pointer;
+}
+
+.addButton span {
+	line-height: 14px;
+}
+
+.checked {
+	background: black;
+}

@@ -1,0 +1,53 @@
+.themeSwitcher{
+  width: 75px;
+  height: 35px;
+  background: #384661;
+  border-radius: 20px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+
+.themeSwitcher.white{
+  border: 2.5px solid #384661;
+  background: #C2AA92;
+}
+
+.themeSwitcher.dark{
+  border: 2.5px solid #C2AA92;
+}
+
+.sun{
+  height: 30px;
+}
+
+.moon{
+  height: 30px;
+}
+
+.choice{
+  top: 50%;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(0, -50%);
+  transition: left 0.25s;
+  background: #384661;
+}
+
+.choice.dark{
+  /* change */
+  background: #C2AA92;
+  left: 43px;
+}
+
+.choice.white{
+  background: #384661;
+  left: 1px;
+}

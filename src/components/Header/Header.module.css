@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  gap: 5px;
+}
+
+.header .logo {
+  font-size: 26px;
+  font-weight: bold;
+  
+}
+
+.header.white .logo{
+  color: #384661;
+}
+
+.header.dark .logo{
+  color: #C2AA92;
+}
+
+.header h2 {
+  font-size: 33px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.header.white h2{
+  color: #384661;
+}
+
+.header.dark h2{
+  color: #C2AA92;
+}

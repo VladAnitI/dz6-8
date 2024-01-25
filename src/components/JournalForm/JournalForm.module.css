@@ -1,0 +1,243 @@
+input,
+textarea {
+	caret-color: #ffffff;
+}
+
+input.noDate::-webkit-datetime-edit-fields-wrapper {
+	color: gray;
+}
+
+.JournalForm {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.JournalForm > div {
+	display: flex;
+	width: 100%;
+	align-items: start;
+	padding: 5px 0;
+	border-bottom: 0.5px solid #fff;
+}
+
+label {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	font-size: 18px;
+	margin-right: 10px;
+}
+
+label > span {
+	font-weight: 600;
+}
+
+.JournalForm.white label {
+	color: #384661;
+}
+
+.JournalForm.dark label {
+	color: #c2aa92;
+}
+
+.titleContainer > input {
+	width: 100%;
+	background: none;
+	outline: none;
+	border: none;
+}
+
+.JournalForm.white input {
+	color: #384661;
+}
+
+.JournalForm.dark input {
+	color: #c2aa92;
+}
+
+.dateContainer {
+	display: flex;
+	align-items: center;
+}
+
+.JournalForm > div > label {
+	height: 30px;
+}
+
+.JournalForm > div > input {
+	height: 30px;
+	width: 100%;
+	font-size: 18px;
+	font-weight: 500;
+	border: none;
+	outline: none;
+	background: none;
+	color: #384661;
+	padding-left: 5px;
+	border-radius: 5px;
+}
+
+.JournalForm.white > div > input > input {
+	color: #384661;
+}
+
+.JournalForm.dark > div > input > input {
+	color: #c2aa92;
+}
+
+input[type='date'] {
+	position: relative;
+	color: #fff;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: auto;
+	height: auto;
+	color: transparent;
+	background: transparent;
+}
+
+input[type='date']::-webkit-inner-spin-button,
+input[type='date']::-webkit-clear-button {
+	z-index: 1;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	border: none !important;
+}
+
+.description > label {
+	margin-bottom: 5px;
+}
+
+.description > textarea {
+	width: 100%;
+	height: 300px;
+	background: none;
+	resize: none;
+	border: 0.5px solid #fff;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	font-size: 18px;
+	outline: none;
+}
+
+.JournalForm.dark .description > textarea {
+	color: #c2aa92;
+}
+
+.JournalForm.white .description > textarea {
+	color: #384661;
+}
+
+.JournalForm > button {
+	padding: 10px;
+	font-size: 18px;
+	border: 0.5px solid #fff;
+	border-radius: 5px;
+	outline: none;
+	background: #384661;
+	color: #fff;
+	cursor: pointer;
+}
+
+.JournalForm.white > button {
+	background: #384661;
+}
+
+.JournalForm.dark > button {
+	background: #c2aa92;
+	/* color: #384661; */
+	font-weight: 600;
+}
+
+.invalid {
+	background: rgb(186, 51, 28) !important;
+}
+
+.moodInput {
+	cursor: pointer;
+}
+
+.moodContainer {
+	position: relative;
+}
+
+.moodDropdownContainer {
+	position: absolute;
+	top: 5px;
+	right: 40px;
+	display: none;
+	background: white;
+	text-align: center;
+	gap: 5px;
+	font-size: 16px;
+	padding: 5px;
+	border-radius: 8px;
+	text-transform: lowercase;
+	color: #fff;
+	z-index: 100;
+}
+
+.moodDropdownContainer.active {
+	display: flex;
+}
+
+.moodDropdownContainer > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 90px;
+	background: #384661;
+	padding: 5px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.moodDropdownContainer > div:hover {
+	background: black;
+}
+
+.moodDropdownContainer > div > img {
+	width: 28px;
+}
+
+.selectedMood {
+	width: 35px;
+	height: 35px;
+}
+
+.verySadMood {
+	padding-left: 35px !important;
+	background: url('../../assets//moods/very-sad.svg') no-repeat !important ;
+}
+
+.sadMood {
+	padding-left: 35px !important;
+	background: url('../../assets//moods/sad.svg') no-repeat !important ;
+}
+
+.neutralMood {
+	padding-left: 35px !important;
+	background: url('../../assets//moods/neutral.svg') no-repeat !important ;
+}
+
+.happyMood {
+	padding-left: 35px !important;
+	background: url('../../assets//moods/happy.svg') no-repeat !important ;
+}
+
+.veryHappyMood {
+	padding-left: 35px !important;
+	background: url('../../assets//moods/very-happy.svg') no-repeat !important ;
+}
